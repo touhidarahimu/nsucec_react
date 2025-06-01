@@ -101,10 +101,10 @@ const Footer = () => {
               <FaLinkedinIn className="text-xl hover:text-[#00BFFF] transition" />
             </a>
           </div>
-           <div className="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} NSU CSE Club. All rights reserved.
-      </div>
         </div>
+      </div>
+      <div className="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} NSU CSE Club. All rights reserved.
       </div>
     </footer>
   );
