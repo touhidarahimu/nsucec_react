@@ -1,5 +1,5 @@
 import React from 'react';
-
+import About_image from '../../../assets/About.jpg'
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-6 py-12">
@@ -21,7 +21,7 @@ const AboutUs = () => {
         {/* Right Side - Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
-            src="/your-image-path.png" // Replace with your actual image path
+            src= {About_image}// Replace with your actual image path
             alt="About NSUCEC"
             className="rounded-xl w-full max-w-md h-auto object-cover shadow-xl"
           />
