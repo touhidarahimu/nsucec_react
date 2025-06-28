@@ -10,8 +10,40 @@ import logo from '../../../assets/nsucec logo.png';
 const Footer = () => {
   return (
     <footer className="bg-[#051C2C] text-white px-6 md:px-10 py-12">
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-        {/* Left Panel */}
+        
+         <div className="flex flex-col justify-between">
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <img
+                src={logo}
+                alt="NSUCEC Logo"
+                className="w-10 h-10 object-contain"
+              />
+              <h2 className="text-2xl font-bold">NSUCEC</h2>
+            </div>
+            <p className="text-sm leading-relaxed">
+              <strong>NSUCEC</strong> (North South University Computer & Engineering Club) is the only
+              engineering-focused club at NSU, founded in 1997. We empower future engineers
+              through innovation, learning, and collaboration.
+            </p>
+          </div>
+          <div className="flex space-x-4 mt-3 ">
+            <a href="#" aria-label="Facebook">
+              <FaFacebookF className="text-2xl hover:text-[#00BFFF] transition" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <FaInstagram className="text-2xl hover:text-[#00BFFF] transition" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <FaYoutube className="text-2xl hover:text-[#00BFFF] transition" />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <FaLinkedinIn className="text-2xl hover:text-[#00BFFF] transition" />
+            </a>
+          </div>
+        </div>
         <div>
           <h3 className="font-bold text-lg mb-2">Governing Panels</h3>
           <ul className="space-y-1 text-sm">
@@ -31,7 +63,7 @@ const Footer = () => {
 
         {/* Middle Panel */}
         <div>
-          <h3 className="font-bold text-lg mb-2">Recruitment</h3>
+         
 
           <h3 className="font-bold text-lg mt-4 mb-2">Wings</h3>
           <ul className="space-y-1 text-sm">
@@ -71,7 +103,7 @@ const Footer = () => {
         </div>
 
         {/* Club Info */}
-        <div className="flex flex-col justify-between">
+        {/* <div className="flex flex-col justify-between">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
@@ -101,7 +133,7 @@ const Footer = () => {
               <FaLinkedinIn className="text-xl hover:text-[#00BFFF] transition" />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} NSU CSE Club. All rights reserved.
